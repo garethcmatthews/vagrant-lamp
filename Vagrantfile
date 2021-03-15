@@ -13,6 +13,7 @@ Vagrant.configure("2") do |config|
     config.vm.synced_folder "./", "/var/www/html"
     config.vm.provision "file", source: "./build/vagrant_setup/apache/000-default.conf", destination: "/home/vagrant/000-default.conf"
     config.vm.provision "shell", path: "./build/vagrant_setup/provision.sh", env: {"MYSQL_ROOT_PASSWORD" => MYSQL_ROOT_PASSWORD, "PHP_VERSION" => PHP_VERSION}
+    config.ssh.insert_key = false
 
     config.vm.provider "virtualbox" do |vb|
         vb.gui = false
