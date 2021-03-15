@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.2
+- Update
+    - Added PHP curl
+    - Added PHP xml
+    - Added PHP zip
+
 ## 1.1
 - Update
     - Moved vagrant setup folders

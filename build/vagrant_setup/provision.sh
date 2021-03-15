@@ -10,8 +10,8 @@ apt-get update
 apt-get upgrade --yes
 add-apt-repository ppa:ondrej/php
 apt-get update
-apt-get install --no-install-recommends --yes nano
 apt-get install --no-install-recommends --yes libzip-dev
+apt-get install --no-install-recommends --yes nano
 apt-get install --no-install-recommends --yes unzip
 
 # Install MySQL
@@ -29,9 +29,12 @@ rm -f /var/www/html/index.html
 apt-get install --no-install-recommends --yes libapache2-mod-php$PHP_VERSION
 apt-get install --no-install-recommends --yes php$PHP_VERSION
 apt-get install --no-install-recommends --yes php$PHP_VERSION-cli
+apt-get install --no-install-recommends --yes php$PHP_VERSION-curl
 apt-get install --no-install-recommends --yes php$PHP_VERSION-mbstring
 apt-get install --no-install-recommends --yes php$PHP_VERSION-mysqli
-apt-get install --no-install-recommends --yes zip$PHP_VERSION
+apt-get install --no-install-recommends --yes php$PHP_VERSION-xml
+apt-get install --no-install-recommends --yes php$PHP_VERSION-zip
+
 sed -i "s|^;date.timezone =.*$|date.timezone = Europe/London|" /etc/php/$PHP_VERSION/apache2/php.ini
 sed -i "s|display_startup_errors =.*$|display_startup_errors = On|" /etc/php/$PHP_VERSION/apache2/php.ini
 sed -i "s|display_errors =.*$|display_errors = On|" /etc/php/$PHP_VERSION/apache2/php.ini
