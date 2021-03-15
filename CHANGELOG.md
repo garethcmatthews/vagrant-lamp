@@ -3,7 +3,8 @@
 ## 1.1
 - Update
     - Moved vagrant setup folders
-    - 
+    - Updated Vagrant file
+    - Updated provision script - added zip utils
 
 ## 1.0
 - Initial Build
