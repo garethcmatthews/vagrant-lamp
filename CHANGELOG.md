@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.3
+- Update
+    - Moved folders
+    - Added provisioning fixes
+    - Deleted empty source folder
+
 ## 1.2
 - Update
     - Added PHP curl
