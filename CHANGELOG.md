@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.4
+- Update
+    - Moved folders
+    - Added multiple PHP versions
+    - Added VagrantReadme
+
 ## 1.3
 - Update
     - Moved folders
