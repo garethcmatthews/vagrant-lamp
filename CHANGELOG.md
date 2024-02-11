@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 1.4.2
+- Cleaned up scripts folder
+
 ## 1.4.1
 - Updated VagrantReadme
 - Updated .gitignore
